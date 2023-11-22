@@ -478,8 +478,69 @@ margin-top:45px;
 
 .sections .second-section{
     background: rgb(58, 58, 58);
-    height: 200px;
+    height: 600px;
     width: auto;
+    display: flex;
+}
+
+.second-section .info-templates{
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.info-templates li{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    background-color: red;
+}
+
+.info-templates a{
+    display: flex;
+    position: relative;
+    background: transparent;
+    height: 75px;
+    width: 350px;
+    transition:ease-out 0.2s;
+    flex: 0 1 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-templates .arrow{
+    background: transparent;
+    height: 50px;
+    width:50px;
+    float:right;
+}
+
+.info-templates li:hover{
+    transform: translateX(50px);
+    transition:ease-out 0.2s;
+    border-radius: 0 25px 25px 0;
+    background-color: transparent;
+}
+
+.info-templates li:hover > .arrow{
+    background: rgb(105, 105, 105);
+    border-radius:  0 25px 25px 0;
+}
+
+.info-templates li a{
+    font-size: 20px;
+}
+
+.info-templates li a:hover{
+    color:rgba(0, 0, 0, 0.4);
+}
+
+.second-section .templates{
+    background: rgb(41, 41, 41);
+    height: 600px;
+    width: 1350px;
 }
 
 .sections .third-section{
